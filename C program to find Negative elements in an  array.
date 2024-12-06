@@ -1,0 +1,27 @@
+//C program to find Negative elements in an  array...
+
+#include <stdio.h>
+
+int main()
+{
+ int n, i, a[10];
+ 
+ printf("\n Enter the Size of an Array :  ");
+ scanf("%d", &n);
+ 
+ printf("\n Enter the Array Elements  :  ");
+ for(i = 0; i < n; i++)
+ {
+      scanf("%d", &a[i]);
+ }
+ 
+ printf("\n Negative Numbers in this Array  :  "); 
+ for(i = 0; i < n; i ++)
+ {
+   if(a[i] < 0)
+   {
+	   	printf("%d  ", a[i]);
+   }
+ }
+ return 0;
+}
