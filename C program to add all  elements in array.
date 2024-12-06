@@ -1,0 +1,21 @@
+//C program to add all  elements in an array...
+
+#include <stdio.h>
+
+int main(){
+    
+    int n,i, sum=0;
+    printf("Enetr a size of an array: ");
+    scanf("%d",&n);
+    
+    int arr[n];
+    
+    printf("\nEnter numbers for an Array: \n");
+    for (i=0; i<n; i++){
+        scanf("%d",&arr[i]);
+        sum += arr[i];
+    }
+    printf("The sum of an Array is: %d",sum);
+    
+return 0;
+}
